@@ -15,7 +15,7 @@ app.post("/user/signup", async (req, res) => {
     const encodedPassword = await hashPassword(req.body.password);
     // set password to encoded password
     req.body.password = encodedPassword;
-    const user = await User.create(res.body);
+    const user = await User.create(req.body);
     res.status(200).json({ status: true, data: user });
   } catch (error) {
     res.json({ status: false, message: error });
