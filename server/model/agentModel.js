@@ -26,19 +26,19 @@ const AgentSchema = mongoose.Schema(
       min: 6,
       max: 1024,
     },
-    address: {
+    // address: {
+    //   type: String,
+    //   required: true,
+    //   min: 6,
+    //   max: 255,
+    // },
+    contact: {
       type: String,
       required: true,
       min: 6,
       max: 255,
     },
-    phone: {
-      type: String,
-      required: true,
-      min: 6,
-      max: 255,
-    },
-    company: {
+    companyName: {
       type: String,
       required: true,
       min: 6,

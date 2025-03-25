@@ -1,15 +1,24 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="app-footer">
       <div className="logo">
-        <div><img src="/frame.png" width={40} height={40} className='footer-logo'/></div>
-        <div><h1>Rent IT</h1></div>
+        <div>
+          <img
+            src="/Frame.png"
+            width={40}
+            height={40}
+            className="footer-logo"
+            alt="Logo"
+          />
+        </div>
+        <div>
+          <h1>Rent IT</h1>
+        </div>
       </div>
       <div className="footer-container">
-        
         <div className="footer-section">
           <h3>Rent IT</h3>
           <ul>

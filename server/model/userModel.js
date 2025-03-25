@@ -24,13 +24,13 @@ const UserSchema = mongoose.Schema(
       min: 6,
       max: 1024,
     },
-    address: {
-      type: String,
-      required: true,
-      min: 6,
-      max: 255,
-    },
-    phone: {
+    // address: {
+    //   type: String,
+    //   required: true,
+    //   min: 6,
+    //   max: 255,
+    // },
+    contact: {
       type: String,
       required: true,
       min: 6,

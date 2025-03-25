@@ -1,11 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './LandingPage.css';
+import React from "react";
+// import { Link } from "react-router-dom";
+import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
     <div className="landing-container">
-
       <main className="landing-main">
         <h3>Rent Your Properties</h3>
         <h3>Easily With Rent It</h3>
@@ -22,17 +21,13 @@ const LandingPage = () => {
             <p>properties</p>
           </div>
         </div>
-        <div className='label-container'>
-        <label className='label'>Rent</label>
+        <div className="label-container">
+          <label className="label">Rent</label>
         </div>
-        
+
         <div className="search-bar">
           <div className="search-input-container">
-            <input
-              type="text"
-              placeholder="Search"
-              className="search-input"
-            />
+            <input type="text" placeholder="Search" className="search-input" />
             <button className="search-btn">Browse Properties</button>
           </div>
         </div>
