@@ -24,6 +24,7 @@ app.post("/agent/signup", async (req, res) => {
 
 //login agent
 app.post("/agent/login", async (req, res) => {
+  console.log(req.body);
   try {
     // find agent by email and password
     const agent = await Agent.findOne({

@@ -8,6 +8,7 @@
 // Don't remove routes it is required for the server to work
 
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
 // Importing database connection
@@ -23,6 +24,7 @@ const adminRoute = require("./routes/adminRoute");
 // Middle ware to parse json
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 app.use("/api", userRoute);
 app.use("/api", agentRoute);
